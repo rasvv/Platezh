@@ -1,0 +1,67 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 389
+  Width = 629
+  object ADODDE_Platezh: TADODataDriverEh
+    ADOConnection = ADOConnection1
+    DynaSQLParams.Options = []
+    MacroVars.Macros = <>
+    SelectCommand.CommandText.Strings = (
+      'Select *'
+      'From Potreblenie')
+    SelectCommand.Parameters = <>
+    UpdateCommand.Parameters = <>
+    InsertCommand.Parameters = <>
+    DeleteCommand.Parameters = <>
+    GetrecCommand.Parameters = <>
+    Left = 168
+    Top = 112
+  end
+  object ADODDE_Tarif: TADODataDriverEh
+    ADOConnection = ADOConnection1
+    DynaSQLParams.Options = []
+    MacroVars.Macros = <>
+    SelectCommand.CommandText.Strings = (
+      'Select * '
+      'From Tarif')
+    SelectCommand.Parameters = <>
+    UpdateCommand.Parameters = <>
+    InsertCommand.Parameters = <>
+    DeleteCommand.Parameters = <>
+    GetrecCommand.Parameters = <>
+    Left = 39
+    Top = 112
+  end
+  object MTE_Tarif: TMemTableEh
+    Params = <>
+    DataDriver = ADODDE_Tarif
+    Left = 39
+    Top = 160
+  end
+  object DS_Tarif: TDataSource
+    DataSet = MTE_Tarif
+    Left = 39
+    Top = 208
+  end
+  object ADOConnection1: TADOConnection
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\MyProg\Delphi\Pl' +
+      'atezh\Platezh.mdb;Persist Security Info=False;'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 40
+    Top = 32
+  end
+  object MTE_Platezh: TMemTableEh
+    Params = <>
+    DataDriver = ADODDE_Platezh
+    Left = 168
+    Top = 160
+  end
+  object DS_Platezh: TDataSource
+    DataSet = MTE_Platezh
+    Left = 168
+    Top = 208
+  end
+end

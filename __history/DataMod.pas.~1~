@@ -1,0 +1,31 @@
+unit DataMod;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, MemTableDataEh, Data.DB, Data.Win.ADODB,
+  MemTableEh, DataDriverEh, ADODataDriverEh;
+
+type
+  TDataModule1 = class(TDataModule)
+    ADODDE_Platezh: TADODataDriverEh;
+    ADODDE_Tarif: TADODataDriverEh;
+    MemTableEh1: TMemTableEh;
+    DataSource1: TDataSource;
+    ADOConnection1: TADOConnection;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.
