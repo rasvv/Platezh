@@ -17,7 +17,7 @@ object Form1: TForm1
     Left = 0
     Top = 0
     Width = 1738
-    Height = 393
+    Height = 336
     ActivePage = TabSheet1
     Align = alClient
     Font.Charset = DEFAULT_CHARSET
@@ -27,14 +27,15 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 0
+    ExplicitHeight = 393
     object TabSheet1: TTabSheet
       Caption = #1055#1083#1072#1090#1077#1078#1080
-      ExplicitHeight = 453
+      ExplicitHeight = 357
       object DBGridEh1: TDBGridEh
         Left = 0
         Top = 0
         Width = 1730
-        Height = 357
+        Height = 300
         Align = alClient
         AutoFitColWidths = True
         DataSource = DM.DS_Platezh
@@ -45,6 +46,7 @@ object Form1: TForm1
         Font.Name = 'Arial'
         Font.Style = []
         ParentFont = False
+        ReadOnly = True
         TabOrder = 0
         TitleParams.MultiTitle = True
         OnCellClick = DBGridEh1CellClick
@@ -171,12 +173,12 @@ object Form1: TForm1
     object TabSheet2: TTabSheet
       Caption = #1058#1072#1088#1080#1092#1099
       ImageIndex = 1
-      ExplicitHeight = 453
+      ExplicitHeight = 357
       object DBGridEh2: TDBGridEh
         Left = 0
         Top = 0
         Width = 1730
-        Height = 357
+        Height = 300
         Align = alClient
         AutoFitColWidths = True
         DataSource = DM.DS_Tarif
@@ -255,17 +257,16 @@ object Form1: TForm1
   end
   object Panel1: TPanel
     Left = 0
-    Top = 393
+    Top = 336
     Width = 1738
-    Height = 337
+    Height = 394
     Align = alBottom
     TabOrder = 1
-    ExplicitTop = 395
     object Panel2: TPanel
       Left = 1
       Top = 1
       Width = 1736
-      Height = 248
+      Height = 304
       Align = alTop
       TabOrder = 0
       OnResize = Panel2Resize
@@ -273,7 +274,7 @@ object Form1: TForm1
         Left = 1
         Top = 1
         Width = 560
-        Height = 246
+        Height = 302
         Align = alLeft
         Caption = #1069#1083#1077#1082#1090#1088#1086#1101#1085#1077#1088#1075#1080#1103
         Font.Charset = DEFAULT_CHARSET
@@ -287,11 +288,12 @@ object Form1: TForm1
         Padding.Bottom = 3
         ParentFont = False
         TabOrder = 0
+        ExplicitHeight = 246
         object GridPanel1: TGridPanel
           Left = 5
           Top = 35
           Width = 550
-          Height = 206
+          Height = 262
           Align = alClient
           Color = clWindow
           ColumnCollection = <
@@ -457,18 +459,14 @@ object Form1: TForm1
             end
             item
               Value = 20.014327260212530000
-            end
-            item
-              SizeStyle = ssAuto
             end>
           TabOrder = 0
-          ExplicitLeft = 6
-          ExplicitTop = 34
+          ExplicitHeight = 206
           object Label2: TLabel
             Left = 95
             Top = 1
             Width = 92
-            Height = 40
+            Height = 52
             Align = alClient
             Caption = #1055#1088#1077#1076#1099#1076#1091#1097#1080#1077
             Font.Charset = DEFAULT_CHARSET
@@ -478,7 +476,6 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitLeft = 96
             ExplicitWidth = 126
             ExplicitHeight = 25
           end
@@ -486,7 +483,7 @@ object Form1: TForm1
             Left = 187
             Top = 1
             Width = 91
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taCenter
             Caption = #1058#1077#1082#1091#1097#1080#1077
@@ -497,7 +494,6 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitLeft = 189
             ExplicitWidth = 83
             ExplicitHeight = 25
           end
@@ -505,7 +501,7 @@ object Form1: TForm1
             Left = 278
             Top = 1
             Width = 90
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taCenter
             Caption = #1056#1072#1079#1085#1080#1094#1072
@@ -516,7 +512,6 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitLeft = 281
             ExplicitWidth = 80
             ExplicitHeight = 25
           end
@@ -524,7 +519,7 @@ object Form1: TForm1
             Left = 368
             Top = 1
             Width = 89
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taCenter
             Caption = #1058#1072#1088#1080#1092
@@ -535,7 +530,6 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitLeft = 372
             ExplicitWidth = 63
             ExplicitHeight = 25
           end
@@ -543,7 +537,7 @@ object Form1: TForm1
             Left = 457
             Top = 1
             Width = 92
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taCenter
             Caption = #1057#1091#1084#1084#1072
@@ -554,15 +548,14 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitLeft = 462
             ExplicitWidth = 60
             ExplicitHeight = 25
           end
           object Label7: TLabel
             Left = 1
-            Top = 41
+            Top = 53
             Width = 94
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taCenter
             Caption = #1058'1'
@@ -573,15 +566,15 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitTop = 46
+            ExplicitTop = 41
             ExplicitWidth = 23
             ExplicitHeight = 25
           end
           object Label8: TLabel
             Left = 1
-            Top = 81
+            Top = 104
             Width = 94
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taCenter
             Caption = #1058'2'
@@ -592,15 +585,15 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitTop = 91
+            ExplicitTop = 81
             ExplicitWidth = 23
             ExplicitHeight = 25
           end
           object Label9: TLabel
             Left = 1
-            Top = 121
+            Top = 155
             Width = 94
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taCenter
             Caption = #1058'3'
@@ -611,15 +604,15 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitTop = 136
+            ExplicitTop = 121
             ExplicitWidth = 23
             ExplicitHeight = 25
           end
           object Label10: TLabel
-            Left = 53
-            Top = 161
-            Width = 225
-            Height = 40
+            Left = 208
+            Top = 207
+            Width = 70
+            Height = 54
             Align = alRight
             Caption = #1057#1059#1052#1052#1040
             Font.Charset = DEFAULT_CHARSET
@@ -629,15 +622,15 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitLeft = 56
-            ExplicitTop = 181
-            ExplicitHeight = 47
+            ExplicitLeft = 53
+            ExplicitTop = 161
+            ExplicitHeight = 25
           end
           object ERazT1: TDBEditEh
             Left = 278
-            Top = 41
+            Top = 53
             Width = 90
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taCenter
             Color = clBtnFace
@@ -652,13 +645,14 @@ object Form1: TForm1
             TabOrder = 0
             Visible = True
             OnChange = ERazT1Change
+            ExplicitTop = 41
             ExplicitHeight = 33
           end
           object EPrevT1: TDBEditEh
             Left = 95
-            Top = 41
+            Top = 53
             Width = 92
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taCenter
             Color = clBtnFace
@@ -672,13 +666,14 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 1
             Visible = True
+            ExplicitTop = 41
             ExplicitHeight = 33
           end
           object ETarifT1: TDBEditEh
             Left = 368
-            Top = 41
+            Top = 53
             Width = 89
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taRightJustify
             Color = clBtnFace
@@ -694,13 +689,14 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 2
             Visible = True
+            ExplicitTop = 41
             ExplicitHeight = 33
           end
           object ESumT1: TDBEditEh
             Left = 457
-            Top = 41
+            Top = 53
             Width = 92
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taRightJustify
             Color = clBtnFace
@@ -715,13 +711,14 @@ object Form1: TForm1
             TabOrder = 3
             Visible = True
             OnChange = ESumT1Change
-            ExplicitTop = 42
+            ExplicitTop = 41
+            ExplicitHeight = 33
           end
           object ET1: TDBEditEh
             Left = 187
-            Top = 41
+            Top = 53
             Width = 91
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taCenter
             DataField = 'ElT1'
@@ -737,15 +734,15 @@ object Form1: TForm1
             TabOrder = 4
             Visible = True
             OnChange = ET1Change
-            ExplicitLeft = 193
-            ExplicitTop = 35
+            ExplicitTop = 41
+            ExplicitHeight = 33
             EditMask = ''
           end
           object EPrevT2: TDBEditEh
             Left = 95
-            Top = 81
+            Top = 104
             Width = 92
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taCenter
             Color = clBtnFace
@@ -759,14 +756,14 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 5
             Visible = True
-            ExplicitTop = 85
+            ExplicitTop = 81
             ExplicitHeight = 33
           end
           object ET2: TDBEditEh
             Left = 187
-            Top = 81
+            Top = 104
             Width = 91
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taCenter
             DataField = 'ElT2'
@@ -782,15 +779,15 @@ object Form1: TForm1
             TabOrder = 6
             Visible = True
             OnChange = ET2Change
-            ExplicitLeft = 193
-            ExplicitTop = 75
+            ExplicitTop = 81
+            ExplicitHeight = 33
             EditMask = ''
           end
           object ERazT2: TDBEditEh
             Left = 278
-            Top = 81
+            Top = 104
             Width = 90
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taCenter
             Color = clBtnFace
@@ -805,14 +802,14 @@ object Form1: TForm1
             TabOrder = 7
             Visible = True
             OnChange = ERazT2Change
-            ExplicitLeft = 272
-            ExplicitTop = 87
+            ExplicitTop = 81
+            ExplicitHeight = 33
           end
           object ETarifT2: TDBEditEh
             Left = 368
-            Top = 81
+            Top = 104
             Width = 89
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taRightJustify
             Color = clBtnFace
@@ -828,14 +825,14 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 8
             Visible = True
-            ExplicitLeft = 362
-            ExplicitTop = 75
+            ExplicitTop = 81
+            ExplicitHeight = 33
           end
           object ESumT2: TDBEditEh
             Left = 457
-            Top = 81
+            Top = 104
             Width = 92
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taRightJustify
             Color = clBtnFace
@@ -850,14 +847,14 @@ object Form1: TForm1
             TabOrder = 9
             Visible = True
             OnChange = ESumT1Change
-            ExplicitTop = 85
+            ExplicitTop = 81
             ExplicitHeight = 33
           end
           object EPrevT3: TDBEditEh
             Left = 95
-            Top = 121
+            Top = 155
             Width = 92
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taCenter
             Color = clBtnFace
@@ -871,14 +868,14 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 10
             Visible = True
-            ExplicitTop = 125
+            ExplicitTop = 121
             ExplicitHeight = 33
           end
           object ET3: TDBEditEh
             Left = 187
-            Top = 121
+            Top = 155
             Width = 91
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taCenter
             DataField = 'ElT3'
@@ -894,14 +891,15 @@ object Form1: TForm1
             TabOrder = 11
             Visible = True
             OnChange = ET3Change
-            ExplicitWidth = 90
+            ExplicitTop = 121
+            ExplicitHeight = 33
             EditMask = ''
           end
           object ERazT3: TDBEditEh
             Left = 278
-            Top = 121
+            Top = 155
             Width = 90
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taCenter
             Color = clBtnFace
@@ -916,14 +914,14 @@ object Form1: TForm1
             TabOrder = 12
             Visible = True
             OnChange = ERazT3Change
-            ExplicitTop = 125
+            ExplicitTop = 121
             ExplicitHeight = 33
           end
           object ETarifT3: TDBEditEh
             Left = 368
-            Top = 121
+            Top = 155
             Width = 89
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taRightJustify
             Color = clBtnFace
@@ -939,14 +937,14 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 13
             Visible = True
-            ExplicitLeft = 374
-            ExplicitTop = 115
+            ExplicitTop = 121
+            ExplicitHeight = 33
           end
           object ESumT3: TDBEditEh
             Left = 457
-            Top = 121
+            Top = 155
             Width = 92
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taRightJustify
             Color = clBtnFace
@@ -961,14 +959,14 @@ object Form1: TForm1
             TabOrder = 14
             Visible = True
             OnChange = ESumT1Change
-            ExplicitTop = 125
+            ExplicitTop = 121
             ExplicitHeight = 33
           end
           object ESum: TDBEditEh
             Left = 278
-            Top = 161
+            Top = 207
             Width = 271
-            Height = 40
+            Height = 54
             Align = alClient
             Alignment = taRightJustify
             Color = clYellow
@@ -982,6 +980,7 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 15
             Visible = True
+            ExplicitTop = 161
             ExplicitHeight = 37
           end
         end
@@ -990,7 +989,7 @@ object Form1: TForm1
         Left = 561
         Top = 1
         Width = 560
-        Height = 246
+        Height = 302
         Align = alLeft
         Caption = #1042#1086#1076#1072
         Font.Charset = DEFAULT_CHARSET
@@ -1004,13 +1003,13 @@ object Form1: TForm1
         Padding.Bottom = 3
         ParentFont = False
         TabOrder = 1
-        ExplicitLeft = 9
-        ExplicitTop = 2
+        ExplicitLeft = 560
+        ExplicitHeight = 246
         object GridPanel2: TGridPanel
           Left = 5
           Top = 35
           Width = 550
-          Height = 206
+          Height = 262
           Align = alClient
           Color = clWindow
           ColumnCollection = <
@@ -1082,73 +1081,73 @@ object Form1: TForm1
             end
             item
               Column = 3
-              Control = DBEditEh1
+              Control = EVodHolRaz
               Row = 1
             end
             item
               Column = 1
-              Control = DBEditEh2
+              Control = EVodHolPrev
               Row = 1
             end
             item
               Column = 4
-              Control = DBEditEh3
+              Control = EVodHolTarif
               Row = 1
             end
             item
               Column = 5
-              Control = DBEditEh4
+              Control = EVodHolSum
               Row = 1
             end
             item
               Column = 2
-              Control = DBEditEh5
+              Control = EVodHol
               Row = 1
             end
             item
               Column = 1
-              Control = DBEditEh6
+              Control = EVodGorPrev
               Row = 2
             end
             item
               Column = 2
-              Control = DBEditEh7
+              Control = EVodGor
               Row = 2
             end
             item
               Column = 3
-              Control = DBEditEh8
+              Control = EVodGorRaz
               Row = 2
             end
             item
               Column = 4
-              Control = DBEditEh9
+              Control = EVodGorTarif
               Row = 2
             end
             item
               Column = 5
-              Control = DBEditEh10
+              Control = EVodGorSum
               Row = 2
             end
             item
               Column = 3
-              Control = DBEditEh13
+              Control = EVodOtv
               Row = 3
             end
             item
               Column = 4
-              Control = DBEditEh14
+              Control = EVodOtvTarif
               Row = 3
             end
             item
               Column = 5
-              Control = DBEditEh15
+              Control = EVodOtvSum
               Row = 3
             end
             item
               Column = 3
               ColumnSpan = 3
-              Control = DBEditEh16
+              Control = EVodSum
               Row = 4
             end>
           ParentBackground = False
@@ -1167,16 +1166,14 @@ object Form1: TForm1
             end
             item
               Value = 20.014327260212530000
-            end
-            item
-              SizeStyle = ssAuto
             end>
           TabOrder = 0
+          ExplicitHeight = 206
           object Label1: TLabel
             Left = 95
             Top = 1
             Width = 92
-            Height = 40
+            Height = 52
             Align = alClient
             Caption = #1055#1088#1077#1076#1099#1076#1091#1097#1080#1077
             Font.Charset = DEFAULT_CHARSET
@@ -1193,7 +1190,7 @@ object Form1: TForm1
             Left = 187
             Top = 1
             Width = 91
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taCenter
             Caption = #1058#1077#1082#1091#1097#1080#1077
@@ -1211,7 +1208,7 @@ object Form1: TForm1
             Left = 278
             Top = 1
             Width = 90
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taCenter
             Caption = #1056#1072#1079#1085#1080#1094#1072
@@ -1229,7 +1226,7 @@ object Form1: TForm1
             Left = 368
             Top = 1
             Width = 89
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taCenter
             Caption = #1058#1072#1088#1080#1092
@@ -1247,7 +1244,7 @@ object Form1: TForm1
             Left = 457
             Top = 1
             Width = 92
-            Height = 40
+            Height = 52
             Align = alClient
             Alignment = taCenter
             Caption = #1057#1091#1084#1084#1072
@@ -1263,9 +1260,9 @@ object Form1: TForm1
           end
           object Label15: TLabel
             Left = 1
-            Top = 41
+            Top = 53
             Width = 94
-            Height = 40
+            Height = 51
             Align = alClient
             Caption = #1061#1086#1083#1086#1076#1085#1072#1103
             Font.Charset = DEFAULT_CHARSET
@@ -1275,14 +1272,15 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
+            ExplicitTop = 41
             ExplicitWidth = 92
             ExplicitHeight = 25
           end
           object Label16: TLabel
             Left = 1
-            Top = 81
+            Top = 104
             Width = 94
-            Height = 40
+            Height = 51
             Align = alClient
             Caption = #1043#1086#1088#1103#1095#1072#1103
             Font.Charset = DEFAULT_CHARSET
@@ -1292,14 +1290,15 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
+            ExplicitTop = 81
             ExplicitWidth = 78
             ExplicitHeight = 25
           end
           object Label17: TLabel
             Left = 1
-            Top = 121
+            Top = 155
             Width = 277
-            Height = 40
+            Height = 52
             Align = alClient
             Caption = #1054#1090#1074#1077#1076#1077#1085#1080#1077
             Font.Charset = DEFAULT_CHARSET
@@ -1309,14 +1308,15 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
+            ExplicitTop = 121
             ExplicitWidth = 105
             ExplicitHeight = 25
           end
           object Label18: TLabel
             Left = 208
-            Top = 161
+            Top = 207
             Width = 70
-            Height = 40
+            Height = 54
             Align = alRight
             Caption = #1057#1059#1052#1052#1040
             Font.Charset = DEFAULT_CHARSET
@@ -1326,14 +1326,15 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitLeft = 53
+            ExplicitTop = 161
             ExplicitHeight = 25
           end
-          object DBEditEh1: TDBEditEh
+          object EVodHolRaz: TDBEditEh
             Left = 278
-            Top = 41
+            Top = 53
             Width = 90
-            Height = 40
+            Height = 51
+            TabStop = False
             Align = alClient
             Alignment = taCenter
             Color = clBtnFace
@@ -1347,13 +1348,16 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 0
             Visible = True
+            OnChange = EVodHolRazChange
+            ExplicitTop = 41
             ExplicitHeight = 33
           end
-          object DBEditEh2: TDBEditEh
+          object EVodHolPrev: TDBEditEh
             Left = 95
-            Top = 41
+            Top = 53
             Width = 92
-            Height = 40
+            Height = 51
+            TabStop = False
             Align = alClient
             Alignment = taCenter
             Color = clBtnFace
@@ -1367,13 +1371,16 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 1
             Visible = True
-            ExplicitHeight = 33
+            ExplicitLeft = 101
+            ExplicitTop = 35
+            ExplicitHeight = 40
           end
-          object DBEditEh3: TDBEditEh
+          object EVodHolTarif: TDBEditEh
             Left = 368
-            Top = 41
+            Top = 53
             Width = 89
-            Height = 40
+            Height = 51
+            TabStop = False
             Align = alClient
             Alignment = taRightJustify
             Color = clBtnFace
@@ -1389,13 +1396,15 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 2
             Visible = True
+            ExplicitTop = 41
             ExplicitHeight = 33
           end
-          object DBEditEh4: TDBEditEh
+          object EVodHolSum: TDBEditEh
             Left = 457
-            Top = 41
+            Top = 53
             Width = 92
-            Height = 40
+            Height = 51
+            TabStop = False
             Align = alClient
             Alignment = taRightJustify
             Color = clBtnFace
@@ -1409,15 +1418,19 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 3
             Visible = True
+            OnChange = EVodHolSumChange
+            ExplicitTop = 41
             ExplicitHeight = 33
           end
-          object DBEditEh5: TDBEditEh
+          object EVodHol: TDBEditEh
             Left = 187
-            Top = 41
+            Top = 53
             Width = 91
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taCenter
+            DataField = 'VodHol'
+            DataSource = DM.DS_Platezh
             DynProps = <>
             EditButtons = <>
             Font.Charset = DEFAULT_CHARSET
@@ -1428,13 +1441,16 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 4
             Visible = True
+            OnChange = EVodHolChange
+            ExplicitTop = 41
             ExplicitHeight = 33
           end
-          object DBEditEh6: TDBEditEh
+          object EVodGorPrev: TDBEditEh
             Left = 95
-            Top = 81
+            Top = 104
             Width = 92
-            Height = 40
+            Height = 51
+            TabStop = False
             Align = alClient
             Alignment = taCenter
             Color = clBtnFace
@@ -1448,15 +1464,18 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 5
             Visible = True
+            ExplicitTop = 81
             ExplicitHeight = 33
           end
-          object DBEditEh7: TDBEditEh
+          object EVodGor: TDBEditEh
             Left = 187
-            Top = 81
+            Top = 104
             Width = 91
-            Height = 40
+            Height = 51
             Align = alClient
             Alignment = taCenter
+            DataField = 'VodGor'
+            DataSource = DM.DS_Platezh
             DynProps = <>
             EditButtons = <>
             Font.Charset = DEFAULT_CHARSET
@@ -1467,13 +1486,16 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 6
             Visible = True
+            OnChange = EVodGorChange
+            ExplicitTop = 81
             ExplicitHeight = 33
           end
-          object DBEditEh8: TDBEditEh
+          object EVodGorRaz: TDBEditEh
             Left = 278
-            Top = 81
+            Top = 104
             Width = 90
-            Height = 40
+            Height = 51
+            TabStop = False
             Align = alClient
             Alignment = taCenter
             Color = clBtnFace
@@ -1487,13 +1509,16 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 7
             Visible = True
+            OnChange = EVodGorRazChange
+            ExplicitTop = 81
             ExplicitHeight = 33
           end
-          object DBEditEh9: TDBEditEh
+          object EVodGorTarif: TDBEditEh
             Left = 368
-            Top = 81
+            Top = 104
             Width = 89
-            Height = 40
+            Height = 51
+            TabStop = False
             Align = alClient
             Alignment = taRightJustify
             Color = clBtnFace
@@ -1509,13 +1534,15 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 8
             Visible = True
+            ExplicitTop = 81
             ExplicitHeight = 33
           end
-          object DBEditEh10: TDBEditEh
+          object EVodGorSum: TDBEditEh
             Left = 457
-            Top = 81
+            Top = 104
             Width = 92
-            Height = 40
+            Height = 51
+            TabStop = False
             Align = alClient
             Alignment = taRightJustify
             Color = clBtnFace
@@ -1529,16 +1556,20 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 9
             Visible = True
+            ExplicitTop = 81
             ExplicitHeight = 33
           end
-          object DBEditEh13: TDBEditEh
+          object EVodOtv: TDBEditEh
             Left = 278
-            Top = 121
+            Top = 155
             Width = 90
-            Height = 40
+            Height = 52
+            TabStop = False
             Align = alClient
             Alignment = taCenter
             Color = clBtnFace
+            DataField = 'VodOtv'
+            DataSource = DM.DS_Platezh
             DynProps = <>
             EditButtons = <>
             Font.Charset = DEFAULT_CHARSET
@@ -1549,13 +1580,16 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 10
             Visible = True
+            OnChange = EVodOtvChange
+            ExplicitTop = 121
             ExplicitHeight = 33
           end
-          object DBEditEh14: TDBEditEh
+          object EVodOtvTarif: TDBEditEh
             Left = 368
-            Top = 121
+            Top = 155
             Width = 89
-            Height = 40
+            Height = 52
+            TabStop = False
             Align = alClient
             Alignment = taRightJustify
             Color = clBtnFace
@@ -1571,13 +1605,16 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 11
             Visible = True
-            ExplicitHeight = 33
+            ExplicitLeft = 362
+            ExplicitTop = 115
+            ExplicitHeight = 40
           end
-          object DBEditEh15: TDBEditEh
+          object EVodOtvSum: TDBEditEh
             Left = 457
-            Top = 121
+            Top = 155
             Width = 92
-            Height = 40
+            Height = 52
+            TabStop = False
             Align = alClient
             Alignment = taRightJustify
             Color = clBtnFace
@@ -1591,13 +1628,15 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 12
             Visible = True
+            ExplicitTop = 121
             ExplicitHeight = 33
           end
-          object DBEditEh16: TDBEditEh
+          object EVodSum: TDBEditEh
             Left = 278
-            Top = 161
+            Top = 207
             Width = 271
-            Height = 40
+            Height = 54
+            TabStop = False
             Align = alClient
             Alignment = taRightJustify
             Color = clYellow
@@ -1611,7 +1650,8 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 13
             Visible = True
-            ExplicitHeight = 37
+            ExplicitTop = 167
+            ExplicitHeight = 40
           end
         end
       end
@@ -1619,7 +1659,7 @@ object Form1: TForm1
         Left = 1121
         Top = 1
         Width = 614
-        Height = 246
+        Height = 302
         Align = alClient
         Caption = #1048#1058#1054#1043#1054
         Font.Charset = DEFAULT_CHARSET
@@ -1633,34 +1673,20 @@ object Form1: TForm1
         Padding.Bottom = 3
         ParentFont = False
         TabOrder = 2
-        ExplicitLeft = 9
-        ExplicitTop = 2
-        ExplicitWidth = 560
+        ExplicitHeight = 246
         object GridPanel3: TGridPanel
           Left = 5
           Top = 35
           Width = 604
-          Height = 206
+          Height = 262
           Align = alClient
           Color = clWindow
           ColumnCollection = <
             item
-              Value = 17.154018737777800000
+              Value = 50.290179047883040000
             end
             item
-              Value = 16.956058145115890000
-            end
-            item
-              Value = 16.760382062836690000
-            end
-            item
-              Value = 16.566964117113800000
-            end
-            item
-              Value = 16.375778245153850000
-            end
-            item
-              Value = 16.186798692001950000
+              Value = 49.709820952116960000
             end>
           ControlCollection = <
             item
@@ -1669,23 +1695,18 @@ object Form1: TForm1
               Row = 0
             end
             item
-              Column = 2
-              Control = Label20
-              Row = 0
+              Column = 1
+              Control = DBEditEh22
+              Row = 2
             end
             item
-              Column = 3
-              Control = Label21
-              Row = 0
+              Column = 1
+              Control = DBEditEh27
+              Row = 3
             end
             item
-              Column = 4
-              Control = Label22
-              Row = 0
-            end
-            item
-              Column = 5
-              Control = Label23
+              Column = 0
+              Control = Label28
               Row = 0
             end
             item
@@ -1705,90 +1726,18 @@ object Form1: TForm1
             end
             item
               Column = 0
-              ColumnSpan = 3
               Control = Label27
               Row = 4
             end
             item
-              Column = 3
-              Control = DBEditEh17
-              Row = 1
-            end
-            item
               Column = 1
-              Control = DBEditEh18
-              Row = 1
-            end
-            item
-              Column = 4
-              Control = DBEditEh19
-              Row = 1
-            end
-            item
-              Column = 5
-              Control = DBEditEh20
-              Row = 1
-            end
-            item
-              Column = 2
-              Control = DBEditEh21
-              Row = 1
-            end
-            item
-              Column = 1
-              Control = DBEditEh22
-              Row = 2
-            end
-            item
-              Column = 2
-              Control = DBEditEh23
-              Row = 2
-            end
-            item
-              Column = 3
-              Control = DBEditEh24
-              Row = 2
-            end
-            item
-              Column = 4
-              Control = DBEditEh25
-              Row = 2
-            end
-            item
-              Column = 5
-              Control = DBEditEh26
-              Row = 2
-            end
-            item
-              Column = 1
-              Control = DBEditEh27
-              Row = 3
-            end
-            item
-              Column = 2
-              Control = DBEditEh28
-              Row = 3
-            end
-            item
-              Column = 3
-              Control = DBEditEh29
-              Row = 3
-            end
-            item
-              Column = 4
-              Control = DBEditEh30
-              Row = 3
-            end
-            item
-              Column = 5
-              Control = DBEditEh31
-              Row = 3
-            end
-            item
-              Column = 3
-              ColumnSpan = 3
-              Control = DBEditEh32
+              Control = DBEditEh1
               Row = 4
+            end
+            item
+              Column = 1
+              Control = DBDateTimeEditEh1
+              Row = 1
             end>
           ParentBackground = False
           RowCollection = <
@@ -1806,17 +1755,15 @@ object Form1: TForm1
             end
             item
               Value = 20.014327260212530000
-            end
-            item
-              SizeStyle = ssAuto
             end>
           TabOrder = 0
-          ExplicitWidth = 550
+          ExplicitLeft = 4
+          ExplicitTop = 34
           object Label19: TLabel
-            Left = 104
+            Left = 303
             Top = 1
-            Width = 102
-            Height = 40
+            Width = 300
+            Height = 52
             Align = alClient
             Caption = #1055#1088#1077#1076#1099#1076#1091#1097#1080#1077
             Font.Charset = DEFAULT_CHARSET
@@ -1826,165 +1773,21 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitLeft = 95
+            ExplicitLeft = 104
             ExplicitWidth = 126
             ExplicitHeight = 25
           end
-          object Label20: TLabel
-            Left = 206
-            Top = 1
-            Width = 100
-            Height = 40
+          object DBEditEh22: TDBEditEh
+            Left = 303
+            Top = 104
+            Width = 300
+            Height = 51
+            TabStop = False
             Align = alClient
             Alignment = taCenter
-            Caption = #1058#1077#1082#1091#1097#1080#1077
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            Layout = tlCenter
-            ExplicitLeft = 187
-            ExplicitWidth = 83
-            ExplicitHeight = 25
-          end
-          object Label21: TLabel
-            Left = 306
-            Top = 1
-            Width = 99
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            Caption = #1056#1072#1079#1085#1080#1094#1072
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            Layout = tlCenter
-            ExplicitLeft = 278
-            ExplicitWidth = 80
-            ExplicitHeight = 25
-          end
-          object Label22: TLabel
-            Left = 405
-            Top = 1
-            Width = 98
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            Caption = #1058#1072#1088#1080#1092
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            Layout = tlCenter
-            ExplicitLeft = 368
-            ExplicitWidth = 63
-            ExplicitHeight = 25
-          end
-          object Label23: TLabel
-            Left = 503
-            Top = 1
-            Width = 100
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            Caption = #1057#1091#1084#1084#1072
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            Layout = tlCenter
-            ExplicitLeft = 457
-            ExplicitWidth = 60
-            ExplicitHeight = 25
-          end
-          object Label24: TLabel
-            Left = 1
-            Top = 41
-            Width = 103
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            Caption = #1058'1'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clMaroon
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            Layout = tlCenter
-            ExplicitWidth = 23
-            ExplicitHeight = 25
-          end
-          object Label25: TLabel
-            Left = 1
-            Top = 81
-            Width = 103
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            Caption = #1058'2'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clTeal
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            Layout = tlCenter
-            ExplicitWidth = 23
-            ExplicitHeight = 25
-          end
-          object Label26: TLabel
-            Left = 1
-            Top = 121
-            Width = 103
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            Caption = #1058'3'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            Layout = tlCenter
-            ExplicitWidth = 23
-            ExplicitHeight = 25
-          end
-          object Label27: TLabel
-            Left = 236
-            Top = 161
-            Width = 70
-            Height = 40
-            Align = alRight
-            Caption = #1057#1059#1052#1052#1040
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            Layout = tlCenter
-            ExplicitLeft = 53
-            ExplicitHeight = 25
-          end
-          object DBEditEh17: TDBEditEh
-            Left = 306
-            Top = 41
-            Width = 99
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            Color = clBtnFace
+            Color = clYellow
+            DataField = 'ITOGOSum'
+            DataSource = DM.DS_Platezh
             DynProps = <>
             EditButtons = <>
             Font.Charset = DEFAULT_CHARSET
@@ -1993,21 +1796,24 @@ object Form1: TForm1
             Font.Name = 'Tahoma'
             Font.Style = []
             ParentFont = False
+            ReadOnly = True
             TabOrder = 0
             Visible = True
-            OnChange = ERazT1Change
-            ExplicitLeft = 278
-            ExplicitWidth = 90
+            ExplicitLeft = 104
+            ExplicitTop = 81
+            ExplicitWidth = 102
             ExplicitHeight = 33
           end
-          object DBEditEh18: TDBEditEh
-            Left = 104
-            Top = 41
-            Width = 102
-            Height = 40
+          object DBEditEh27: TDBEditEh
+            Left = 303
+            Top = 155
+            Width = 300
+            Height = 52
             Align = alClient
             Alignment = taCenter
-            Color = clBtnFace
+            Color = clWhite
+            DataField = 'Oplacheno'
+            DataSource = DM.DS_Platezh
             DynProps = <>
             EditButtons = <>
             Font.Charset = DEFAULT_CHARSET
@@ -2018,20 +1824,109 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 1
             Visible = True
-            ExplicitLeft = 95
-            ExplicitWidth = 92
-            ExplicitHeight = 33
+            ExplicitLeft = 309
+            ExplicitTop = 149
           end
-          object DBEditEh19: TDBEditEh
-            Left = 405
-            Top = 41
-            Width = 98
-            Height = 40
+          object Label28: TLabel
+            Left = 1
+            Top = 1
+            Width = 302
+            Height = 52
             Align = alClient
-            Alignment = taRightJustify
+            Alignment = taCenter
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -21
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            Layout = tlCenter
+            ExplicitWidth = 7
+            ExplicitHeight = 25
+          end
+          object Label24: TLabel
+            Left = 1
+            Top = 53
+            Width = 302
+            Height = 51
+            Align = alClient
+            Alignment = taCenter
+            Caption = #1044#1072#1090#1072
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -21
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            Layout = tlCenter
+            ExplicitWidth = 46
+            ExplicitHeight = 25
+          end
+          object Label25: TLabel
+            Left = 1
+            Top = 104
+            Width = 302
+            Height = 51
+            Align = alClient
+            Alignment = taCenter
+            Caption = #1050' '#1086#1087#1083#1072#1090#1077
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -21
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            Layout = tlCenter
+            ExplicitWidth = 87
+            ExplicitHeight = 25
+          end
+          object Label26: TLabel
+            Left = 1
+            Top = 155
+            Width = 302
+            Height = 52
+            Align = alClient
+            Alignment = taCenter
+            Caption = #1054#1087#1083#1072#1095#1077#1085#1086
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -21
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            Layout = tlCenter
+            ExplicitWidth = 95
+            ExplicitHeight = 25
+          end
+          object Label27: TLabel
+            Left = 1
+            Top = 207
+            Width = 302
+            Height = 54
+            Align = alClient
+            Alignment = taCenter
+            Caption = #1044#1086#1083#1075
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -21
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            Layout = tlCenter
+            ExplicitWidth = 46
+            ExplicitHeight = 25
+          end
+          object DBEditEh1: TDBEditEh
+            Left = 303
+            Top = 207
+            Width = 300
+            Height = 54
+            TabStop = False
+            Align = alClient
+            Alignment = taCenter
             Color = clBtnFace
-            DataField = 'ElT1Tarif'
-            DataSource = DM.DS_TekTarif
+            DataField = 'Dolg'
+            DataSource = DM.DS_Platezh
             DynProps = <>
             EditButtons = <>
             Font.Charset = DEFAULT_CHARSET
@@ -2040,313 +1935,35 @@ object Form1: TForm1
             Font.Name = 'Tahoma'
             Font.Style = []
             ParentFont = False
+            ReadOnly = True
             TabOrder = 2
             Visible = True
-            ExplicitLeft = 368
-            ExplicitWidth = 89
+            ExplicitLeft = 104
+            ExplicitTop = 121
+            ExplicitWidth = 102
             ExplicitHeight = 33
           end
-          object DBEditEh20: TDBEditEh
-            Left = 503
-            Top = 41
-            Width = 100
-            Height = 40
+          object DBDateTimeEditEh1: TDBDateTimeEditEh
+            Left = 303
+            Top = 53
+            Width = 300
+            Height = 51
             Align = alClient
-            Alignment = taRightJustify
-            Color = clBtnFace
+            DataField = 'Data'
+            DataSource = DM.DS_Platezh
             DynProps = <>
             EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
+            Kind = dtkDateEh
             TabOrder = 3
             Visible = True
-            OnChange = ESumT1Change
-            ExplicitLeft = 457
-            ExplicitWidth = 92
-            ExplicitHeight = 33
-          end
-          object DBEditEh21: TDBEditEh
-            Left = 206
-            Top = 41
-            Width = 100
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 4
-            Visible = True
-            OnChange = ET1Change
-            ExplicitLeft = 187
-            ExplicitWidth = 91
-            ExplicitHeight = 33
-          end
-          object DBEditEh22: TDBEditEh
-            Left = 104
-            Top = 81
-            Width = 102
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            Color = clBtnFace
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 5
-            Visible = True
-            ExplicitLeft = 95
-            ExplicitWidth = 92
-            ExplicitHeight = 33
-          end
-          object DBEditEh23: TDBEditEh
-            Left = 206
-            Top = 81
-            Width = 100
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 6
-            Visible = True
-            OnChange = ET2Change
-            ExplicitLeft = 187
-            ExplicitWidth = 91
-            ExplicitHeight = 33
-          end
-          object DBEditEh24: TDBEditEh
-            Left = 306
-            Top = 81
-            Width = 99
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            Color = clBtnFace
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 7
-            Visible = True
-            OnChange = ERazT2Change
-            ExplicitLeft = 278
-            ExplicitWidth = 90
-            ExplicitHeight = 33
-          end
-          object DBEditEh25: TDBEditEh
-            Left = 405
-            Top = 81
-            Width = 98
-            Height = 40
-            Align = alClient
-            Alignment = taRightJustify
-            Color = clBtnFace
-            DataField = 'ElT2Tarif'
-            DataSource = DM.DS_TekTarif
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 8
-            Visible = True
-            ExplicitLeft = 368
-            ExplicitWidth = 89
-            ExplicitHeight = 33
-          end
-          object DBEditEh26: TDBEditEh
-            Left = 503
-            Top = 81
-            Width = 100
-            Height = 40
-            Align = alClient
-            Alignment = taRightJustify
-            Color = clBtnFace
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 9
-            Visible = True
-            OnChange = ESumT1Change
-            ExplicitLeft = 457
-            ExplicitWidth = 92
-            ExplicitHeight = 33
-          end
-          object DBEditEh27: TDBEditEh
-            Left = 104
-            Top = 121
-            Width = 102
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            Color = clBtnFace
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 10
-            Visible = True
-            ExplicitLeft = 95
-            ExplicitWidth = 92
-            ExplicitHeight = 33
-          end
-          object DBEditEh28: TDBEditEh
-            Left = 206
-            Top = 121
-            Width = 100
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 11
-            Visible = True
-            OnChange = ET3Change
-            ExplicitLeft = 187
-            ExplicitWidth = 91
-            ExplicitHeight = 33
-          end
-          object DBEditEh29: TDBEditEh
-            Left = 306
-            Top = 121
-            Width = 99
-            Height = 40
-            Align = alClient
-            Alignment = taCenter
-            Color = clBtnFace
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 12
-            Visible = True
-            OnChange = ERazT3Change
-            ExplicitLeft = 278
-            ExplicitWidth = 90
-            ExplicitHeight = 33
-          end
-          object DBEditEh30: TDBEditEh
-            Left = 405
-            Top = 121
-            Width = 98
-            Height = 40
-            Align = alClient
-            Alignment = taRightJustify
-            Color = clBtnFace
-            DataField = 'ElT3Tarif'
-            DataSource = DM.DS_TekTarif
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 13
-            Visible = True
-            ExplicitLeft = 368
-            ExplicitWidth = 89
-            ExplicitHeight = 33
-          end
-          object DBEditEh31: TDBEditEh
-            Left = 503
-            Top = 121
-            Width = 100
-            Height = 40
-            Align = alClient
-            Alignment = taRightJustify
-            Color = clBtnFace
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 14
-            Visible = True
-            OnChange = ESumT1Change
-            ExplicitLeft = 457
-            ExplicitWidth = 92
-            ExplicitHeight = 33
-          end
-          object DBEditEh32: TDBEditEh
-            Left = 306
-            Top = 161
-            Width = 297
-            Height = 40
-            Align = alClient
-            Alignment = taRightJustify
-            Color = clYellow
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -24
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-            TabOrder = 15
-            Visible = True
-            ExplicitLeft = 278
-            ExplicitWidth = 271
-            ExplicitHeight = 37
+            ExplicitHeight = 31
           end
         end
       end
     end
     object Button1: TButton
-      Left = 16
-      Top = 264
+      Left = 8
+      Top = 320
       Width = 200
       Height = 57
       Caption = #1053#1086#1074#1072#1103' '#1079#1072#1087#1080#1089#1100
@@ -2359,8 +1976,8 @@ object Form1: TForm1
       TabOrder = 1
     end
     object Button2: TButton
-      Left = 256
-      Top = 264
+      Left = 248
+      Top = 320
       Width = 200
       Height = 57
       Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100

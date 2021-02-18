@@ -57,47 +57,32 @@ type
     Label16: TLabel;
     Label17: TLabel;
     Label18: TLabel;
-    DBEditEh1: TDBEditEh;
-    DBEditEh2: TDBEditEh;
-    DBEditEh3: TDBEditEh;
-    DBEditEh4: TDBEditEh;
-    DBEditEh5: TDBEditEh;
-    DBEditEh6: TDBEditEh;
-    DBEditEh7: TDBEditEh;
-    DBEditEh8: TDBEditEh;
-    DBEditEh9: TDBEditEh;
-    DBEditEh10: TDBEditEh;
-    DBEditEh13: TDBEditEh;
-    DBEditEh14: TDBEditEh;
-    DBEditEh15: TDBEditEh;
-    DBEditEh16: TDBEditEh;
+    EVodHolRaz: TDBEditEh;
+    EVodHolPrev: TDBEditEh;
+    EVodHolTarif: TDBEditEh;
+    EVodHolSum: TDBEditEh;
+    EVodHol: TDBEditEh;
+    EVodGorPrev: TDBEditEh;
+    EVodGor: TDBEditEh;
+    EVodGorRaz: TDBEditEh;
+    EVodGorTarif: TDBEditEh;
+    EVodGorSum: TDBEditEh;
+    EVodOtv: TDBEditEh;
+    EVodOtvTarif: TDBEditEh;
+    EVodOtvSum: TDBEditEh;
+    EVodSum: TDBEditEh;
     GroupBox3: TGroupBox;
     GridPanel3: TGridPanel;
     Label19: TLabel;
-    Label20: TLabel;
-    Label21: TLabel;
-    Label22: TLabel;
-    Label23: TLabel;
+    DBEditEh22: TDBEditEh;
+    DBEditEh27: TDBEditEh;
+    Label28: TLabel;
     Label24: TLabel;
     Label25: TLabel;
     Label26: TLabel;
     Label27: TLabel;
-    DBEditEh17: TDBEditEh;
-    DBEditEh18: TDBEditEh;
-    DBEditEh19: TDBEditEh;
-    DBEditEh20: TDBEditEh;
-    DBEditEh21: TDBEditEh;
-    DBEditEh22: TDBEditEh;
-    DBEditEh23: TDBEditEh;
-    DBEditEh24: TDBEditEh;
-    DBEditEh25: TDBEditEh;
-    DBEditEh26: TDBEditEh;
-    DBEditEh27: TDBEditEh;
-    DBEditEh28: TDBEditEh;
-    DBEditEh29: TDBEditEh;
-    DBEditEh30: TDBEditEh;
-    DBEditEh31: TDBEditEh;
-    DBEditEh32: TDBEditEh;
+    DBEditEh1: TDBEditEh;
+    DBDateTimeEditEh1: TDBDateTimeEditEh;
     procedure DBGridEh1CellClick(Column: TColumnEh);
     procedure ET1Change(Sender: TObject);
     procedure ET2Change(Sender: TObject);
@@ -107,6 +92,12 @@ type
     procedure ERazT3Change(Sender: TObject);
     procedure ESumT1Change(Sender: TObject);
     procedure Panel2Resize(Sender: TObject);
+    procedure EVodHolRazChange(Sender: TObject);
+    procedure EVodHolChange(Sender: TObject);
+    procedure EVodGorChange(Sender: TObject);
+    procedure EVodGorRazChange(Sender: TObject);
+    procedure EVodOtvChange(Sender: TObject);
+    procedure EVodHolSumChange(Sender: TObject);
   private
     { Private declarations }
   public
@@ -135,32 +126,28 @@ begin
   EPrevT2.Value := DM.MTE_PlatezhElT2.Value;
   EPrevT3.Value := DM.MTE_PlatezhElT3.Value;
 
+  EVodHolPrev.Value := DM.MTE_PlatezhVodHol.Value;
+  EVodGorPrev.Value := DM.MTE_PlatezhVodGor.Value;
+
   DM.MTE_Platezh.Next;
-
-//  ET1.Value := DM.MTE_PlatezhElT1.Value;
-//  ET2.Value := DM.MTE_PlatezhElT2.Value;
-//  ET3.Value := DM.MTE_PlatezhElT3.Value;
-
-
-
 
 end;
 
 procedure TForm1.ERazT1Change(Sender: TObject);
 begin
-  if (ETarifT1.Value <> '') and (ETarifT1.Value <> '') then
+  if (ERazT1.Value <> '') and (ETarifT1.Value <> '') then
   ESumT1.Value := ERazT1.Value * ETarifT1.Value;
 end;
 
 procedure TForm1.ERazT2Change(Sender: TObject);
 begin
-  if (ETarifT2.Value <> '') and (ETarifT2.Value <> '') then
+  if (ERazT2.Value <> '') and (ETarifT2.Value <> '') then
   ESumT2.Value := ERazT2.Value * ETarifT2.Value;
 end;
 
 procedure TForm1.ERazT3Change(Sender: TObject);
 begin
-  if (ETarifT3.Value <> '') and (ETarifT3.Value <> '') then
+  if (ERazT3.Value <> '') and (ETarifT3.Value <> '') then
   ESumT3.Value := ERazT3.Value * ETarifT3.Value;
 end;
 
@@ -192,10 +179,56 @@ begin
   ERazT3.Value := ET3.Value - EPrevT3.Value;
 end;
 
+procedure TForm1.EVodGorChange(Sender: TObject);
+begin
+  if (EVodGor.Value <> '') and (EVodGorPrev.Value <> '') then
+  EVodGorRaz.Value := EVodGor.Value - EVodGorPrev.Value;
+end;
+
+procedure TForm1.EVodGorRazChange(Sender: TObject);
+begin
+  if (EVodGorRaz.Value <> '') and (EVodGorTarif.Value <> '') then
+  EVodGorSum.Value := EVodGorRaz.Value * EVodGorTarif.Value;
+
+  if (EVodHolRaz.Value <> '') and (EVodGorRaz.Value <> '') then
+  EVodOtv.Value := EVodHolRaz.Value * EVodGorRaz.Value;
+end;
+
+procedure TForm1.EVodHolChange(Sender: TObject);
+begin
+  if (EVodHol.Value <> '') and (EVodHolPrev.Value <> '') then
+  EVodHolRaz.Value := EVodHol.Value - EVodHolPrev.Value;
+end;
+
+procedure TForm1.EVodHolRazChange(Sender: TObject);
+begin
+  if (EVodHolRaz.Value <> '') and (EVodHolTarif.Value <> '') then
+  EVodHolSum.Value := EVodHolRaz.Value * EVodHolTarif.Value;
+
+  if (EVodHolRaz.Value <> '') and (EVodGorRaz.Value <> '') then
+  EVodOtv.Value := EVodHolRaz.Value * EVodGorRaz.Value;
+
+end;
+
+procedure TForm1.EVodHolSumChange(Sender: TObject);
+begin
+  if EVodHolSum.Value = '' then EVodHolSum.Value := 0;
+  if EVodGorSum.Value = '' then EVodGorSum.Value := 0;
+  if EVodOtvSum.Value = '' then EVodOtvSum.Value := 0;
+
+  EVodSum.Value := StrToFloat(EVodHolSum.Value) + StrToFloat(EVodGorSum.Value) + StrToFloat(EVodOtvSum.Value);
+end;
+
+procedure TForm1.EVodOtvChange(Sender: TObject);
+begin
+  if (EVodOtv.Value <> '') and (EVodOtvTarif.Value <> '') then
+  EVodOtvSum.Value := EVodOtv.Value * EVodOtvTarif.Value;
+end;
+
 procedure TForm1.Panel2Resize(Sender: TObject);
 begin
-  GroupBox1.Width := Panel2.Width div 3;
-  GroupBox2.Width := Panel2.Width div 3;
+  GroupBox1.Width := Round(Panel2.Width * 0.4);
+  GroupBox2.Width := Round(Panel2.Width * 0.4);
 end;
 
 end.
