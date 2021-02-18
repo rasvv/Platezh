@@ -7,7 +7,6 @@ object DM: TDM
     ADOConnection = ADOConnection1
     DynaSQLParams.Options = []
     MacroVars.Macros = <>
-    ProviderDataSet = MTE_Platezh
     SelectCommand.CommandText.Strings = (
       'Select *'
       'From Potreblenie')
@@ -31,7 +30,7 @@ object DM: TDM
     InsertCommand.Parameters = <>
     DeleteCommand.Parameters = <>
     GetrecCommand.Parameters = <>
-    Left = 39
+    Left = 31
     Top = 112
   end
   object MTE_Tarif: TMemTableEh
@@ -90,11 +89,8 @@ object DM: TDM
     Top = 32
   end
   object MTE_Platezh: TMemTableEh
-    Filter = #39'1=1'#39
-    Filtered = True
     Params = <>
     DataDriver = ADODDE_Platezh
-    ReadOnly = True
     Left = 168
     Top = 160
     object MTE_PlatezhNPP: TAutoIncField

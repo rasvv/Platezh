@@ -67,22 +67,22 @@ type
     EVodGorRaz: TDBEditEh;
     EVodGorTarif: TDBEditEh;
     EVodGorSum: TDBEditEh;
-    EVodOtv: TDBEditEh;
     EVodOtvTarif: TDBEditEh;
     EVodOtvSum: TDBEditEh;
     EVodSum: TDBEditEh;
     GroupBox3: TGroupBox;
     GridPanel3: TGridPanel;
     Label19: TLabel;
-    DBEditEh22: TDBEditEh;
-    DBEditEh27: TDBEditEh;
+    EOplacheno: TDBEditEh;
     Label28: TLabel;
     Label24: TLabel;
     Label25: TLabel;
     Label26: TLabel;
     Label27: TLabel;
-    DBEditEh1: TDBEditEh;
-    DBDateTimeEditEh1: TDBDateTimeEditEh;
+    EDolg: TDBEditEh;
+    dpData: TDBDateTimeEditEh;
+    EVodOtv: TDBEditEh;
+    ESumma: TDBEditEh;
     procedure DBGridEh1CellClick(Column: TColumnEh);
     procedure ET1Change(Sender: TObject);
     procedure ET2Change(Sender: TObject);
@@ -98,6 +98,7 @@ type
     procedure EVodGorRazChange(Sender: TObject);
     procedure EVodOtvChange(Sender: TObject);
     procedure EVodHolSumChange(Sender: TObject);
+    procedure ESumChange(Sender: TObject);
   private
     { Private declarations }
   public
@@ -151,6 +152,13 @@ begin
   ESumT3.Value := ERazT3.Value * ETarifT3.Value;
 end;
 
+procedure TForm1.ESumChange(Sender: TObject);
+begin
+  if (ESum.Value <> '') and (EVodSum.Value <> '') then
+  ESumma.Value := StrToFloat(ESum.Value) + StrToFloat(EVodSum.Value);
+
+end;
+
 procedure TForm1.ESumT1Change(Sender: TObject);
 begin
   if ESumT1.Value = '' then ESumT1.Value := 0;
@@ -191,7 +199,7 @@ begin
   EVodGorSum.Value := EVodGorRaz.Value * EVodGorTarif.Value;
 
   if (EVodHolRaz.Value <> '') and (EVodGorRaz.Value <> '') then
-  EVodOtv.Value := EVodHolRaz.Value * EVodGorRaz.Value;
+  EVodOtv.Value := StrToInt(EVodHolRaz.Value) + StrToInt(EVodGorRaz.Value);
 end;
 
 procedure TForm1.EVodHolChange(Sender: TObject);
@@ -206,7 +214,7 @@ begin
   EVodHolSum.Value := EVodHolRaz.Value * EVodHolTarif.Value;
 
   if (EVodHolRaz.Value <> '') and (EVodGorRaz.Value <> '') then
-  EVodOtv.Value := EVodHolRaz.Value * EVodGorRaz.Value;
+  EVodOtv.Value := StrToInt(EVodHolRaz.Value) + StrToInt(EVodGorRaz.Value);
 
 end;
 

@@ -27,10 +27,8 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 0
-    ExplicitHeight = 393
     object TabSheet1: TTabSheet
       Caption = #1055#1083#1072#1090#1077#1078#1080
-      ExplicitHeight = 357
       object DBGridEh1: TDBGridEh
         Left = 0
         Top = 0
@@ -173,7 +171,6 @@ object Form1: TForm1
     object TabSheet2: TTabSheet
       Caption = #1058#1072#1088#1080#1092#1099
       ImageIndex = 1
-      ExplicitHeight = 357
       object DBGridEh2: TDBGridEh
         Left = 0
         Top = 0
@@ -288,7 +285,6 @@ object Form1: TForm1
         Padding.Bottom = 3
         ParentFont = False
         TabOrder = 0
-        ExplicitHeight = 246
         object GridPanel1: TGridPanel
           Left = 5
           Top = 35
@@ -313,7 +309,7 @@ object Form1: TForm1
               Value = 16.375778245153850000
             end
             item
-              Value = 16.186798692001950000
+              Value = 16.186798692001960000
             end>
           ControlCollection = <
             item
@@ -461,7 +457,6 @@ object Form1: TForm1
               Value = 20.014327260212530000
             end>
           TabOrder = 0
-          ExplicitHeight = 206
           object Label2: TLabel
             Left = 95
             Top = 1
@@ -566,7 +561,6 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitTop = 41
             ExplicitWidth = 23
             ExplicitHeight = 25
           end
@@ -585,7 +579,6 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitTop = 81
             ExplicitWidth = 23
             ExplicitHeight = 25
           end
@@ -604,7 +597,6 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitTop = 121
             ExplicitWidth = 23
             ExplicitHeight = 25
           end
@@ -622,8 +614,6 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitLeft = 53
-            ExplicitTop = 161
             ExplicitHeight = 25
           end
           object ERazT1: TDBEditEh
@@ -645,7 +635,6 @@ object Form1: TForm1
             TabOrder = 0
             Visible = True
             OnChange = ERazT1Change
-            ExplicitTop = 41
             ExplicitHeight = 33
           end
           object EPrevT1: TDBEditEh
@@ -666,8 +655,8 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 1
             Visible = True
-            ExplicitTop = 41
-            ExplicitHeight = 33
+            ExplicitLeft = 89
+            ExplicitTop = 59
           end
           object ETarifT1: TDBEditEh
             Left = 368
@@ -689,8 +678,8 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 2
             Visible = True
-            ExplicitTop = 41
-            ExplicitHeight = 33
+            ExplicitLeft = 362
+            ExplicitTop = 47
           end
           object ESumT1: TDBEditEh
             Left = 457
@@ -711,8 +700,7 @@ object Form1: TForm1
             TabOrder = 3
             Visible = True
             OnChange = ESumT1Change
-            ExplicitTop = 41
-            ExplicitHeight = 33
+            ExplicitTop = 47
           end
           object ET1: TDBEditEh
             Left = 187
@@ -734,8 +722,8 @@ object Form1: TForm1
             TabOrder = 4
             Visible = True
             OnChange = ET1Change
-            ExplicitTop = 41
-            ExplicitHeight = 33
+            ExplicitLeft = 181
+            ExplicitTop = 47
             EditMask = ''
           end
           object EPrevT2: TDBEditEh
@@ -756,8 +744,8 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 5
             Visible = True
-            ExplicitTop = 81
-            ExplicitHeight = 33
+            ExplicitLeft = 89
+            ExplicitTop = 98
           end
           object ET2: TDBEditEh
             Left = 187
@@ -779,8 +767,8 @@ object Form1: TForm1
             TabOrder = 6
             Visible = True
             OnChange = ET2Change
-            ExplicitTop = 81
-            ExplicitHeight = 33
+            ExplicitLeft = 181
+            ExplicitTop = 98
             EditMask = ''
           end
           object ERazT2: TDBEditEh
@@ -802,8 +790,8 @@ object Form1: TForm1
             TabOrder = 7
             Visible = True
             OnChange = ERazT2Change
-            ExplicitTop = 81
-            ExplicitHeight = 33
+            ExplicitLeft = 272
+            ExplicitTop = 98
           end
           object ETarifT2: TDBEditEh
             Left = 368
@@ -825,7 +813,6 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 8
             Visible = True
-            ExplicitTop = 81
             ExplicitHeight = 33
           end
           object ESumT2: TDBEditEh
@@ -847,8 +834,7 @@ object Form1: TForm1
             TabOrder = 9
             Visible = True
             OnChange = ESumT1Change
-            ExplicitTop = 81
-            ExplicitHeight = 33
+            ExplicitTop = 98
           end
           object EPrevT3: TDBEditEh
             Left = 95
@@ -868,8 +854,8 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 10
             Visible = True
-            ExplicitTop = 121
-            ExplicitHeight = 33
+            ExplicitLeft = 101
+            ExplicitTop = 161
           end
           object ET3: TDBEditEh
             Left = 187
@@ -891,8 +877,8 @@ object Form1: TForm1
             TabOrder = 11
             Visible = True
             OnChange = ET3Change
-            ExplicitTop = 121
-            ExplicitHeight = 33
+            ExplicitLeft = 181
+            ExplicitTop = 149
             EditMask = ''
           end
           object ERazT3: TDBEditEh
@@ -914,8 +900,8 @@ object Form1: TForm1
             TabOrder = 12
             Visible = True
             OnChange = ERazT3Change
-            ExplicitTop = 121
-            ExplicitHeight = 33
+            ExplicitLeft = 272
+            ExplicitTop = 149
           end
           object ETarifT3: TDBEditEh
             Left = 368
@@ -937,7 +923,6 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 13
             Visible = True
-            ExplicitTop = 121
             ExplicitHeight = 33
           end
           object ESumT3: TDBEditEh
@@ -959,8 +944,7 @@ object Form1: TForm1
             TabOrder = 14
             Visible = True
             OnChange = ESumT1Change
-            ExplicitTop = 121
-            ExplicitHeight = 33
+            ExplicitTop = 149
           end
           object ESum: TDBEditEh
             Left = 278
@@ -980,8 +964,8 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 15
             Visible = True
-            ExplicitTop = 161
-            ExplicitHeight = 37
+            OnChange = ESumChange
+            ExplicitTop = 213
           end
         end
       end
@@ -1003,8 +987,6 @@ object Form1: TForm1
         Padding.Bottom = 3
         ParentFont = False
         TabOrder = 1
-        ExplicitLeft = 560
-        ExplicitHeight = 246
         object GridPanel2: TGridPanel
           Left = 5
           Top = 35
@@ -1029,7 +1011,7 @@ object Form1: TForm1
               Value = 16.375778245153850000
             end
             item
-              Value = 16.186798692001950000
+              Value = 16.186798692001960000
             end>
           ControlCollection = <
             item
@@ -1130,11 +1112,6 @@ object Form1: TForm1
               Row = 2
             end
             item
-              Column = 3
-              Control = EVodOtv
-              Row = 3
-            end
-            item
               Column = 4
               Control = EVodOtvTarif
               Row = 3
@@ -1149,6 +1126,11 @@ object Form1: TForm1
               ColumnSpan = 3
               Control = EVodSum
               Row = 4
+            end
+            item
+              Column = 3
+              Control = EVodOtv
+              Row = 3
             end>
           ParentBackground = False
           RowCollection = <
@@ -1168,7 +1150,8 @@ object Form1: TForm1
               Value = 20.014327260212530000
             end>
           TabOrder = 0
-          ExplicitHeight = 206
+          ExplicitLeft = 4
+          ExplicitTop = 34
           object Label1: TLabel
             Left = 95
             Top = 1
@@ -1272,7 +1255,6 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitTop = 41
             ExplicitWidth = 92
             ExplicitHeight = 25
           end
@@ -1290,7 +1272,6 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitTop = 81
             ExplicitWidth = 78
             ExplicitHeight = 25
           end
@@ -1308,9 +1289,7 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitTop = 121
-            ExplicitWidth = 105
-            ExplicitHeight = 25
+            ExplicitTop = 161
           end
           object Label18: TLabel
             Left = 208
@@ -1326,7 +1305,6 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitTop = 161
             ExplicitHeight = 25
           end
           object EVodHolRaz: TDBEditEh
@@ -1349,8 +1327,8 @@ object Form1: TForm1
             TabOrder = 0
             Visible = True
             OnChange = EVodHolRazChange
-            ExplicitTop = 41
-            ExplicitHeight = 33
+            ExplicitLeft = 284
+            ExplicitTop = 47
           end
           object EVodHolPrev: TDBEditEh
             Left = 95
@@ -1371,9 +1349,8 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 1
             Visible = True
-            ExplicitLeft = 101
-            ExplicitTop = 35
-            ExplicitHeight = 40
+            ExplicitLeft = 89
+            ExplicitTop = 59
           end
           object EVodHolTarif: TDBEditEh
             Left = 368
@@ -1396,8 +1373,8 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 2
             Visible = True
-            ExplicitTop = 41
-            ExplicitHeight = 33
+            ExplicitLeft = 362
+            ExplicitTop = 47
           end
           object EVodHolSum: TDBEditEh
             Left = 457
@@ -1419,8 +1396,7 @@ object Form1: TForm1
             TabOrder = 3
             Visible = True
             OnChange = EVodHolSumChange
-            ExplicitTop = 41
-            ExplicitHeight = 33
+            ExplicitTop = 47
           end
           object EVodHol: TDBEditEh
             Left = 187
@@ -1442,8 +1418,8 @@ object Form1: TForm1
             TabOrder = 4
             Visible = True
             OnChange = EVodHolChange
-            ExplicitTop = 41
-            ExplicitHeight = 33
+            ExplicitLeft = 193
+            ExplicitTop = 47
           end
           object EVodGorPrev: TDBEditEh
             Left = 95
@@ -1464,8 +1440,8 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 5
             Visible = True
-            ExplicitTop = 81
-            ExplicitHeight = 33
+            ExplicitLeft = 89
+            ExplicitTop = 98
           end
           object EVodGor: TDBEditEh
             Left = 187
@@ -1487,8 +1463,8 @@ object Form1: TForm1
             TabOrder = 6
             Visible = True
             OnChange = EVodGorChange
-            ExplicitTop = 81
-            ExplicitHeight = 33
+            ExplicitLeft = 181
+            ExplicitTop = 110
           end
           object EVodGorRaz: TDBEditEh
             Left = 278
@@ -1510,8 +1486,8 @@ object Form1: TForm1
             TabOrder = 7
             Visible = True
             OnChange = EVodGorRazChange
-            ExplicitTop = 81
-            ExplicitHeight = 33
+            ExplicitLeft = 284
+            ExplicitTop = 98
           end
           object EVodGorTarif: TDBEditEh
             Left = 368
@@ -1534,8 +1510,8 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 8
             Visible = True
-            ExplicitTop = 81
-            ExplicitHeight = 33
+            ExplicitLeft = 362
+            ExplicitTop = 98
           end
           object EVodGorSum: TDBEditEh
             Left = 457
@@ -1556,33 +1532,8 @@ object Form1: TForm1
             ParentFont = False
             TabOrder = 9
             Visible = True
-            ExplicitTop = 81
-            ExplicitHeight = 33
-          end
-          object EVodOtv: TDBEditEh
-            Left = 278
-            Top = 155
-            Width = 90
-            Height = 52
-            TabStop = False
-            Align = alClient
-            Alignment = taCenter
-            Color = clBtnFace
-            DataField = 'VodOtv'
-            DataSource = DM.DS_Platezh
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 10
-            Visible = True
-            OnChange = EVodOtvChange
-            ExplicitTop = 121
-            ExplicitHeight = 33
+            OnChange = EVodHolSumChange
+            ExplicitTop = 98
           end
           object EVodOtvTarif: TDBEditEh
             Left = 368
@@ -1603,11 +1554,10 @@ object Form1: TForm1
             Font.Name = 'Tahoma'
             Font.Style = []
             ParentFont = False
-            TabOrder = 11
+            TabOrder = 10
             Visible = True
-            ExplicitLeft = 362
-            ExplicitTop = 115
-            ExplicitHeight = 40
+            ExplicitLeft = 374
+            ExplicitTop = 149
           end
           object EVodOtvSum: TDBEditEh
             Left = 457
@@ -1626,10 +1576,10 @@ object Form1: TForm1
             Font.Name = 'Tahoma'
             Font.Style = []
             ParentFont = False
-            TabOrder = 12
+            TabOrder = 11
             Visible = True
-            ExplicitTop = 121
-            ExplicitHeight = 33
+            OnChange = EVodHolSumChange
+            ExplicitTop = 149
           end
           object EVodSum: TDBEditEh
             Left = 278
@@ -1648,10 +1598,33 @@ object Form1: TForm1
             Font.Name = 'Tahoma'
             Font.Style = [fsBold]
             ParentFont = False
+            TabOrder = 12
+            Visible = True
+            OnChange = ESumChange
+            ExplicitTop = 213
+          end
+          object EVodOtv: TDBEditEh
+            Left = 278
+            Top = 155
+            Width = 90
+            Height = 52
+            TabStop = False
+            Align = alClient
+            Alignment = taCenter
+            Color = clBtnFace
+            DynProps = <>
+            EditButtons = <>
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -21
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
             TabOrder = 13
             Visible = True
-            ExplicitTop = 167
-            ExplicitHeight = 40
+            OnChange = EVodOtvChange
+            ExplicitLeft = 272
+            ExplicitTop = 149
           end
         end
       end
@@ -1673,7 +1646,6 @@ object Form1: TForm1
         Padding.Bottom = 3
         ParentFont = False
         TabOrder = 2
-        ExplicitHeight = 246
         object GridPanel3: TGridPanel
           Left = 5
           Top = 35
@@ -1683,10 +1655,10 @@ object Form1: TForm1
           Color = clWindow
           ColumnCollection = <
             item
-              Value = 50.290179047883040000
+              Value = 50.290179047883050000
             end
             item
-              Value = 49.709820952116960000
+              Value = 49.709820952116950000
             end>
           ControlCollection = <
             item
@@ -1696,12 +1668,7 @@ object Form1: TForm1
             end
             item
               Column = 1
-              Control = DBEditEh22
-              Row = 2
-            end
-            item
-              Column = 1
-              Control = DBEditEh27
+              Control = EOplacheno
               Row = 3
             end
             item
@@ -1731,13 +1698,18 @@ object Form1: TForm1
             end
             item
               Column = 1
-              Control = DBEditEh1
+              Control = EDolg
               Row = 4
             end
             item
               Column = 1
-              Control = DBDateTimeEditEh1
+              Control = dpData
               Row = 1
+            end
+            item
+              Column = 1
+              Control = ESumma
+              Row = 2
             end>
           ParentBackground = False
           RowCollection = <
@@ -1773,38 +1745,10 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             Layout = tlCenter
-            ExplicitLeft = 104
             ExplicitWidth = 126
             ExplicitHeight = 25
           end
-          object DBEditEh22: TDBEditEh
-            Left = 303
-            Top = 104
-            Width = 300
-            Height = 51
-            TabStop = False
-            Align = alClient
-            Alignment = taCenter
-            Color = clYellow
-            DataField = 'ITOGOSum'
-            DataSource = DM.DS_Platezh
-            DynProps = <>
-            EditButtons = <>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -21
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            ReadOnly = True
-            TabOrder = 0
-            Visible = True
-            ExplicitLeft = 104
-            ExplicitTop = 81
-            ExplicitWidth = 102
-            ExplicitHeight = 33
-          end
-          object DBEditEh27: TDBEditEh
+          object EOplacheno: TDBEditEh
             Left = 303
             Top = 155
             Width = 300
@@ -1812,7 +1756,6 @@ object Form1: TForm1
             Align = alClient
             Alignment = taCenter
             Color = clWhite
-            DataField = 'Oplacheno'
             DataSource = DM.DS_Platezh
             DynProps = <>
             EditButtons = <>
@@ -1822,7 +1765,7 @@ object Form1: TForm1
             Font.Name = 'Tahoma'
             Font.Style = []
             ParentFont = False
-            TabOrder = 1
+            TabOrder = 0
             Visible = True
             ExplicitLeft = 309
             ExplicitTop = 149
@@ -1916,7 +1859,7 @@ object Form1: TForm1
             ExplicitWidth = 46
             ExplicitHeight = 25
           end
-          object DBEditEh1: TDBEditEh
+          object EDolg: TDBEditEh
             Left = 303
             Top = 207
             Width = 300
@@ -1925,7 +1868,6 @@ object Form1: TForm1
             Align = alClient
             Alignment = taCenter
             Color = clBtnFace
-            DataField = 'Dolg'
             DataSource = DM.DS_Platezh
             DynProps = <>
             EditButtons = <>
@@ -1936,14 +1878,12 @@ object Form1: TForm1
             Font.Style = []
             ParentFont = False
             ReadOnly = True
-            TabOrder = 2
+            TabOrder = 1
             Visible = True
-            ExplicitLeft = 104
-            ExplicitTop = 121
-            ExplicitWidth = 102
-            ExplicitHeight = 33
+            ExplicitLeft = 309
+            ExplicitTop = 213
           end
-          object DBDateTimeEditEh1: TDBDateTimeEditEh
+          object dpData: TDBDateTimeEditEh
             Left = 303
             Top = 53
             Width = 300
@@ -1953,10 +1893,38 @@ object Form1: TForm1
             DataSource = DM.DS_Platezh
             DynProps = <>
             EditButtons = <>
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -24
+            Font.Name = 'Tahoma'
+            Font.Style = []
             Kind = dtkDateEh
+            ParentFont = False
+            TabOrder = 2
+            Visible = True
+            ExplicitHeight = 37
+          end
+          object ESumma: TDBEditEh
+            Left = 303
+            Top = 104
+            Width = 300
+            Height = 51
+            TabStop = False
+            Align = alClient
+            Alignment = taCenter
+            Color = clYellow
+            DynProps = <>
+            EditButtons = <>
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -27
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
             TabOrder = 3
             Visible = True
-            ExplicitHeight = 31
+            OnChange = EVodOtvChange
+            ExplicitHeight = 41
           end
         end
       end
