@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.876,D:\MyProg\Delphi\Платежи\Unit1.dfm=D:\MyProg\Delphi\Платежи\DataMod.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.288,E:\System\Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\System\Documents\Embarcadero\Studio\Projects\Platezh.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.342,E:\System\Documents\Embarcadero\Studio\Projects\Unit2.pas=E:\System\Documents\Embarcadero\Studio\Projects\DM.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.206,=E:\System\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.515,D:\MyProg\Delphi\Платежи\Platezh.dproj=E:\System\Documents\Embarcadero\Studio\Projects\Platezh.dproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.342,E:\System\Documents\Embarcadero\Studio\Projects\DM.dfm=E:\System\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.247,D:\MyProg\Delphi\Платежи\MainForm.dfm=E:\System\Documents\Embarcadero\Studio\Projects\MainForm.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.247,E:\System\Documents\Embarcadero\Studio\Projects\MainForm.dfm=D:\MyProg\Delphi\Платежи\MainForm.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.876,D:\MyProg\Delphi\Платежи\DataMod.dfm=D:\MyProg\Delphi\Платежи\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.419,E:\System\Documents\Embarcadero\Studio\Projects\Unit1.pas=E:\System\Documents\Embarcadero\Studio\Projects\MainForm.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.210,=E:\System\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.419,E:\System\Documents\Embarcadero\Studio\Projects\MainForm.dfm=E:\System\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.751,E:\System\Documents\Embarcadero\Studio\Projects\DM.pas=</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.342,E:\System\Documents\Embarcadero\Studio\Projects\DM.pas=E:\System\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.288,E:\System\Documents\Embarcadero\Studio\Projects\Platezh.dproj=E:\System\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.928,=D:\MyProg\Delphi\Платежи\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.419,E:\System\Documents\Embarcadero\Studio\Projects\MainForm.pas=E:\System\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.247,D:\MyProg\Delphi\Платежи\MainForm.pas=E:\System\Documents\Embarcadero\Studio\Projects\MainForm.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.876,D:\MyProg\Delphi\Платежи\Unit1.pas=D:\MyProg\Delphi\Платежи\DataMod.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.751,E:\System\Documents\Embarcadero\Studio\Projects\DM.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.515,E:\System\Documents\Embarcadero\Studio\Projects\Platezh.dproj=D:\MyProg\Delphi\Платежи\Platezh.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.876,D:\MyProg\Delphi\Платежи\DataMod.pas=D:\MyProg\Delphi\Платежи\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.342,E:\System\Documents\Embarcadero\Studio\Projects\Unit2.dfm=E:\System\Documents\Embarcadero\Studio\Projects\DM.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.247,E:\System\Documents\Embarcadero\Studio\Projects\MainForm.pas=D:\MyProg\Delphi\Платежи\MainForm.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.419,E:\System\Documents\Embarcadero\Studio\Projects\Unit1.dfm=E:\System\Documents\Embarcadero\Studio\Projects\MainForm.dfm</Transaction>
   </Transactions>
 </BorlandProject>

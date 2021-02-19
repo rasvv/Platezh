@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, DBGridEhGrouping, ToolCtrlsEh,
   DBGridEhToolCtrls, DynVarsEh, EhLibVCL, GridsEh, DBAxisGridsEh, DBGridEh,
-  Vcl.ComCtrls, Vcl.StdCtrls, Vcl.ExtCtrls, DBCtrlsEh, Vcl.Mask;
+  Vcl.ComCtrls, Vcl.StdCtrls, Vcl.ExtCtrls, DBCtrlsEh, Vcl.Mask, DB;
 
 type
   TForm1 = class(TForm)
@@ -28,8 +28,8 @@ type
     Label8: TLabel;
     Label9: TLabel;
     Label10: TLabel;
-    Button1: TButton;
-    Button2: TButton;
+    BtnNewRecord: TButton;
+    BtnSave: TButton;
     ERazT1: TDBEditEh;
     EPrevT1: TDBEditEh;
     ETarifT1: TDBEditEh;
@@ -73,16 +73,16 @@ type
     GroupBox3: TGroupBox;
     GridPanel3: TGridPanel;
     Label19: TLabel;
-    EOplacheno: TDBEditEh;
     Label28: TLabel;
     Label24: TLabel;
     Label25: TLabel;
     Label26: TLabel;
     Label27: TLabel;
-    EDolg: TDBEditEh;
     dpData: TDBDateTimeEditEh;
     EVodOtv: TDBEditEh;
     ESumma: TDBEditEh;
+    EOplacheno: TDBEditEh;
+    EDolg: TDBEditEh;
     procedure DBGridEh1CellClick(Column: TColumnEh);
     procedure ET1Change(Sender: TObject);
     procedure ET2Change(Sender: TObject);
@@ -99,6 +99,10 @@ type
     procedure EVodOtvChange(Sender: TObject);
     procedure EVodHolSumChange(Sender: TObject);
     procedure ESumChange(Sender: TObject);
+    procedure BtnNewRecordClick(Sender: TObject);
+    procedure BtnSaveClick(Sender: TObject);
+    procedure EOplachenoChange(Sender: TObject);
+    procedure ESummaChange(Sender: TObject);
   private
     { Private declarations }
   public
@@ -113,6 +117,58 @@ implementation
 {$R *.dfm}
 
 uses DataMod;
+
+procedure TForm1.BtnNewRecordClick(Sender: TObject);
+var
+e1, e2, e3, vh, vg: Double;
+begin
+//  if DM.MTE_Platezh.State in [dsEdit] then
+  e1 := DM.MTE_PlatezhElT1.Value;
+  e2 := DM.MTE_PlatezhElT2.Value;
+  e3 := DM.MTE_PlatezhElT3.Value;
+
+  vh := DM.MTE_PlatezhVodHol.Value;
+  vg := DM.MTE_PlatezhVodGor.Value;
+
+  DM.MTE_Platezh.Insert;
+
+  dpData.Value := now;
+
+  EPrevT1.Value := e1 ;
+  EPrevT2.Value := e2 ;
+  EPrevT3.Value := e3;
+
+  EVodHolPrev.Value := vh;
+  EVodGorPrev.Value := vg;
+  BtnSave.Enabled := true;
+  ET1.SetFocus;
+end;
+
+procedure TForm1.BtnSaveClick(Sender: TObject);
+begin
+  DM.MTE_PlatezhElT1Raz.Value := ERazT1.Value;
+  DM.MTE_PlatezhElT2Raz.Value := ERazT2.Value;
+  DM.MTE_PlatezhElT3Raz.Value := ERazT3.Value;
+
+  DM.MTE_PlatezhElT1Sum.Value := ESumT1.Value;
+  DM.MTE_PlatezhElT2Sum.Value := ESumT2.Value;
+  DM.MTE_PlatezhElT3Sum.Value := ESumT3.Value;
+
+  DM.MTE_PlatezhVodHolRaz.Value := EVodHolRaz.Value;
+  DM.MTE_PlatezhVodGorRaz.Value := EVodGorRaz.Value;
+  DM.MTE_PlatezhVodOtv.Value := EVodOtv.Value;
+
+  DM.MTE_PlatezhVodHolSum.Value := EVodHolSum.Value;
+  DM.MTE_PlatezhVodGorSum.Value := EVodGorSum.Value;
+  DM.MTE_PlatezhVodOtvSum.Value := EVodOtvSum.Value;
+
+  DM.MTE_PlatezhITOGOSum.Value := ESumma.Value;
+  DM.MTE_PlatezhOplacheno.Value := EOplacheno.Value;
+  DM.MTE_PlatezhDolg.Value := EDolg.Value;
+
+  DM.MTE_Platezh.Post;
+  BtnSave.Enabled := False;
+end;
 
 procedure TForm1.DBGridEh1CellClick(Column: TColumnEh);
 begin
@@ -132,6 +188,12 @@ begin
 
   DM.MTE_Platezh.Next;
 
+end;
+
+procedure TForm1.EOplachenoChange(Sender: TObject);
+begin
+  if (ESumma.Value <> '') and (EOplacheno.Value <> '') then
+  EDolg.Value := StrToFloat(ESumma.Value) - StrToFloat(EOplacheno.Value);
 end;
 
 procedure TForm1.ERazT1Change(Sender: TObject);
@@ -157,6 +219,11 @@ begin
   if (ESum.Value <> '') and (EVodSum.Value <> '') then
   ESumma.Value := StrToFloat(ESum.Value) + StrToFloat(EVodSum.Value);
 
+end;
+
+procedure TForm1.ESummaChange(Sender: TObject);
+begin
+  EOplacheno.Value := ESumma.Value;
 end;
 
 procedure TForm1.ESumT1Change(Sender: TObject);

@@ -57,6 +57,7 @@ type
     ADOQ_TarifVodGorTarif: TBCDField;
     ADOQ_TarifVodOtvTarif: TBCDField;
     DS_TekTarif: TDataSource;
+    ADOQuery1: TADOQuery;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
